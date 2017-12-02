@@ -1,0 +1,17 @@
+<resources>
+
+    <string name="app_name">Cade Minha Série</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="nomelabel">"Nome : "</string>
+    <string name="anolabel">"Ano : "</string>
+    <string name="criadorlabel">"Criador : "</string>
+    <string name="elencoPrincipallabel">"Elenco Principal : "</string>
+    <string name="temporadaslabel">"Temporadas : "</string>
+    <string name="atividadelabel">"Atividade : "</string>
+    <string name="tramalabel">"Trama : "</string>
+    <string name="generoslabel">"Gêneros : "</string>
+    <string name="paisOrigemlabel">"País de Origem : "</string>
+    <string name="tempoEpisodiolabel">"Tempo Médio por Episódio : "</string>
+
+
+</resources>

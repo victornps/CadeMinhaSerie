@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/nomelabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nomelabel" />
+
+    <TextView
+        android:id="@+id/nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/nomelabel" />
+
+    <TextView
+        android:id="@+id/anolabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nome"
+        android:text="@string/anolabel" />
+
+    <TextView
+        android:id="@+id/ano"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nome"
+        android:layout_toRightOf="@+id/anolabel" />
+
+    <TextView
+        android:id="@+id/criadorlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ano"
+        android:text="@string/criadorlabel" />
+
+    <TextView
+        android:id="@+id/criador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ano"
+        android:layout_toRightOf="@+id/criadorlabel" />
+
+    <TextView
+        android:id="@+id/elencoPrincipallabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/criador"
+        android:text="@string/elencoPrincipallabel" />
+
+    <TextView
+        android:id="@+id/elencoPrincipal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/criador"
+        android:layout_toRightOf="@+id/elencoPrincipallabel" />
+
+    <TextView
+        android:id="@+id/temporadaslabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/elencoPrincipal"
+        android:text="@string/temporadaslabel" />
+
+    <TextView
+        android:id="@+id/temporadas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/elencoPrincipal"
+        android:layout_toRightOf="@+id/temporadaslabel" />
+
+    <TextView
+        android:id="@+id/atividadelabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/temporadas"
+        android:text="@string/atividadelabel" />
+
+    <TextView
+        android:id="@+id/atividade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/temporadas"
+        android:layout_toRightOf="@+id/atividadelabel" />
+
+    <TextView
+        android:id="@+id/tramalabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/atividade"
+        android:text="@string/tramalabel" />
+
+    <TextView
+        android:id="@+id/trama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/atividade"
+        android:layout_toRightOf="@+id/tramalabel" />
+
+    <TextView
+        android:id="@+id/generoslabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/trama"
+        android:text="@string/generoslabel" />
+
+    <TextView
+        android:id="@+id/generos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/trama"
+        android:layout_toRightOf="@+id/generoslabel" />
+
+    <TextView
+        android:id="@+id/paisOrigemlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/generos"
+        android:text="@string/paisOrigemlabel" />
+
+    <TextView
+        android:id="@+id/paisOrigem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/generos"
+        android:layout_toRightOf="@+id/paisOrigemlabel" />
+
+    <TextView
+        android:id="@+id/tempoEpisodiolabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/paisOrigem"
+        android:text="@string/tempoEpisodiolabel" />
+
+    <TextView
+        android:id="@+id/tempoEpisodio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/paisOrigem"
+        android:layout_toRightOf="@+id/tempoEpisodiolabel" />
+
+
+</RelativeLayout>
