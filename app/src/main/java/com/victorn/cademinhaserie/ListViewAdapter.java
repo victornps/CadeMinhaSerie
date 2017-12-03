@@ -14,6 +14,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.view.View.OnClickListener;
 
+import com.squareup.picasso.Picasso;
+
 public class ListViewAdapter extends BaseAdapter {
 
     Context mContext;
@@ -33,7 +35,8 @@ public class ListViewAdapter extends BaseAdapter {
     public class ViewHolder {
         TextView nome;
         TextView ano;
-        TextView elencoPrincipal;
+        TextView temporadas;
+        ImageView thumbnail;
     }
 
     @Override
@@ -59,7 +62,9 @@ public class ListViewAdapter extends BaseAdapter {
 
             holder.nome = (TextView) view.findViewById(R.id.nome);
             holder.ano = (TextView) view.findViewById(R.id.ano);
-            holder.elencoPrincipal = (TextView) view.findViewById(R.id.elencoPrincipal);
+            holder.temporadas = (TextView) view.findViewById(R.id.temporadas);
+
+            holder.thumbnail = (ImageView) view.findViewById(R.id.thumbnail);
 
             view.setTag(holder);
         } else {
@@ -67,7 +72,13 @@ public class ListViewAdapter extends BaseAdapter {
         }
         holder.nome.setText(seriadolist.get(position).getNome());
         holder.ano.setText(seriadolist.get(position).getAno());
-        holder.elencoPrincipal.setText(seriadolist.get(position).getElencoPrincipal());
+        holder.temporadas.setText(seriadolist.get(position).getTemporadas());
+
+        Picasso.with(this.mContext).load(seriadolist.get(position).getThumbnail())
+                .placeholder(R.drawable.placeholder)
+                .error(R.drawable.error)
+                .resize(300,150)
+                .into(holder.thumbnail);
 
         view.setOnClickListener(new OnClickListener() {
 

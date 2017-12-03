@@ -13,8 +13,9 @@ public class Seriado {
     private String generos;
     private String paisOrigem;
     private String tempoEpisodio;
+    private String thumbnail;
 
-    public Seriado(int id, String nome, String ano, String criador, String elencoPrincipal, String temporadas, String atividade, String trama, String generos, String paisOrigem, String tempoEpisodio) {
+    public Seriado(int id, String nome, String ano, String criador, String elencoPrincipal, String temporadas, String atividade, String trama, String generos, String paisOrigem, String tempoEpisodio, String thumbnail) {
         this.id = id;
         this.nome = nome;
         this.ano = ano;
@@ -26,9 +27,10 @@ public class Seriado {
         this.generos = generos;
         this.paisOrigem = paisOrigem;
         this.tempoEpisodio = tempoEpisodio;
+        this.thumbnail = thumbnail;
     }
 
-    public Seriado(String nome, String ano, String criador, String elencoPrincipal, String temporadas, String atividade, String trama, String generos, String paisOrigem, String tempoEpisodio) {
+    public Seriado(String nome, String ano, String criador, String elencoPrincipal, String temporadas, String atividade, String trama, String generos, String paisOrigem, String tempoEpisodio, String thumbnail) {
         this.nome = nome;
         this.ano = ano;
         this.criador = criador;
@@ -39,6 +41,7 @@ public class Seriado {
         this.generos = generos;
         this.paisOrigem = paisOrigem;
         this.tempoEpisodio = tempoEpisodio;
+        this.thumbnail = thumbnail;
     }
 
     public int getId() {
@@ -83,5 +86,9 @@ public class Seriado {
 
     public String getTempoEpisodio() {
         return tempoEpisodio;
+    }
+
+    public String getThumbnail() {
+        return thumbnail;
     }
 }

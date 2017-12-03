@@ -14,6 +14,8 @@ import org.apache.http.impl.client.DefaultHttpClient;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import android.app.ProgressDialog;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.app.Activity;
@@ -40,6 +42,14 @@ public class MainActivity extends Activity {
     }
 
     private class JsonReadTask extends AsyncTask<String, Void, String> {
+
+        private ProgressDialog dialogo;
+
+        @Override
+        protected void onPreExecute() {
+            dialogo = ProgressDialog.show(MainActivity.this, "Aguarde", "Carregando dados...");
+        }
+
         @Override
         protected String doInBackground(String... params) {
             HttpClient httpclient = new DefaultHttpClient();
@@ -78,6 +88,7 @@ public class MainActivity extends Activity {
 
         @Override
         protected void onPostExecute(String result) {
+            dialogo.dismiss();
             ListDrawer();
         }}
 
@@ -104,8 +115,9 @@ public class MainActivity extends Activity {
                 String generos = jsonChildNode.optString("generos");
                 String paisOrigem = jsonChildNode.optString("paisOrigem");
                 String tempoEpisodio = jsonChildNode.optString("tempoEpisodio");
+                String thumbnail = jsonChildNode.optString("thumbnail");
 
-                Seriado cms = new Seriado(nome,ano,criador,elencoPrincipal,temporadas,atividade,trama,generos,paisOrigem,tempoEpisodio);
+                Seriado cms = new Seriado(nome,ano,criador,elencoPrincipal,temporadas,atividade,trama,generos,paisOrigem,tempoEpisodio,thumbnail);
                 arraylist.add(cms);
             }
         } catch (JSONException e) {

@@ -30,20 +30,25 @@
         android:layout_toRightOf="@+id/anolabel" />
 
     <TextView
-        android:id="@+id/elencoPrincipallabel"
+        android:id="@+id/temporadaslabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/anolabel"
-        android:text="@string/elencoPrincipallabel" />
+        android:text="@string/temporadaslabel" />
 
     <TextView
-        android:id="@+id/elencoPrincipal"
+        android:id="@+id/temporadas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/ano"
-        android:layout_toRightOf="@+id/elencoPrincipallabel" />
+        android:layout_toRightOf="@+id/temporadaslabel" />
 
-
-
+    <ImageView
+        android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="#000000"
+        android:padding="1dp" />
 
 </RelativeLayout>
